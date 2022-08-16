@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>newAcc</title>
+    <style>
+        .contents {
+            display: block;
+            width: 500px;
+            margin: 0 auto;
+            margin-top: 300px;
+        }
+
+        .textContent {
+            margin-left: 100px;
+        }
+
+        .textBox {
+            float: right;
+            margin-right: 100px;
+        }
+
+        .radio_gender {
+            margin-left: 60px;
+        }
+
+        .comboBox {
+            float: right;
+            margin-right: 100px;
+            width: 177px;
+            height: 21px;
+        }
+
+        .button {
+            width: 100px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="contents">
+        <form action="/newAcc_process">
+            <p class="textContent">ID : <input type="text" class="textBox" name="id"></p>
+            <p class="textContent">Password : <input type="password" class="textBox" name="id"></p>
+            <p class="textContent">Nick Name : <input type="text" class="textBox" name="nickname"></p>
+            <p class="textContent">Age : <input type="number" class="textBox" name="age"></p>
+            <p class="textContent">
+                Gender : 
+                <input type="radio" id="man" name="gender" value="man" class="radio_gender"><label for="man">Man</label>
+                <input type="radio" id="woman" name="gender" value="woman"><label for="woman">Woman</label>
+            </p>
+            <p class="textContent">
+                Question : 
+                <select name="question" class="comboBox">
+                    <option value="1">질문1</option>
+                    <option value="2">질문2</option>
+                    <option value="3">질문3</option>
+                </select>
+            </p>
+            <p class="textContent">Answer : <input type="text" class="textBox" name="answer"></p>
+            <div class="button">
+                <input type="submit" value="ok">
+                <input type="button" onclick="history.back()" value="back" style="float: right;">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

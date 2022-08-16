@@ -1,0 +1,13 @@
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| id       | int(11)     | NO   | PRI | NULL    | auto_increment |
+| acc_id   | varchar(20) | NO   | UNI | NULL    |                |
+| password | varchar(30) | NO   |     | NULL    |                |
+| nickname | varchar(10) | NO   | UNI | NULL    |                |
+| age      | int(3)      | NO   |     | NULL    |                |
+| gender   | varchar(5)  | NO   |     | NULL    |                |
+| date     | datetime    | NO   |     | NULL    |                |
+| question | int(3)      | NO   |     | NULL    |                |
+| answer   | varchar(30) | NO   |     | NULL    |                |
++----------+-------------+------+-----+---------+----------------+
