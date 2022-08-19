@@ -16,8 +16,10 @@ let app = http.createServer((request, response) =>{
         account.newAcc_process(request, response);
     } else if (pathname === '/findId'){
 
-    } else if (pathname === '/findPw'){
-
+    } else if (pathname === '/findPW'){
+        account.findPW(request, response);
+    } else if (pathname === '/findPW_process'){
+        account.findPW_process(request, response);
     } else {
         response.writeHead(404);
         response.end("Not Found");
